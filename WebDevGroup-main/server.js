@@ -9,7 +9,6 @@ if (!process.env.JWT_SECRET) {
   process.exit(1);
 }
 
-console.log("Database URI: ", db.url);
 // Connect to the database
 db.mongoose
 .connect(db.url, { useNewUrlParser: true, useUnifiedTopology: true })

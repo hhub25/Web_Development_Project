@@ -33,7 +33,7 @@ const signIn = async (req, res) => {
 
 const signOut = (req, res) => {
   res.clearCookie('t');
-  return res.status(200).json({ message: "signed out" });
+  return res.status(200).json({ message: "Signed out successfully!" });
 };
 
 const hasAuthorization = (req, res, next) => {
